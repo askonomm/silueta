@@ -29,7 +29,7 @@ export async function install() {
 
     const revisionInfo = fetcher.revisionInfo(revision);
     if (revisionInfo.local) {
-    console.log(`Already downloaded at ${revisionInfo.executablePath}`);
+    // already downloaded
     } else {
     let progressBar: ProgressBar;
     const newRevisionInfo = await fetcher.download(
